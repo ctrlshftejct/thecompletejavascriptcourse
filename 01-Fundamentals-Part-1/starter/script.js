@@ -5,4 +5,6 @@ console.log("Jonas");
 console.log(23);
 
 let firstName = "Andrew"; //declaring a variable in computer's memory
-console.log(firstName)
+console.log(firstName) // camelcase preferred
+
+let PI = 3.1415;
