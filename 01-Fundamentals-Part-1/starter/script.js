@@ -8,3 +8,10 @@ let firstName = "Andrew"; //declaring a variable in computer's memory
 console.log(firstName) // camelcase preferred
 
 let PI = 3.1415;
+
+let myFirstJob = 'Trainer';
+let mySecondJob = 'Recruiter';
+let myCurrentJob = 'System Administrator'
+
+console.log(myFirstJob);
+console.log(mySecondJob);
