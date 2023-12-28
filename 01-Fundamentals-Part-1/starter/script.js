@@ -39,6 +39,19 @@ let children;
 
 // Symbol (ES2015): value that is unique and cannot be changed [not useful for now]
 
-//BigInt (ES2020): larger integers than the Number type can hold
+// BigInt (ES2020): larger integers than the Number type can hold
 
 // JavaScript has dynamic typing, maybe we do not manually have to define the data type, they are determined automatically.
+
+let javascriptIsFun = true;
+console.log(javascriptIsFun)
+
+// typeof operator, used to show the type of a value
+console.log(typeof true);
+console.log(typeof javascriptIsFun);
+console.log(typeof age);
+console.log(typeof 'Andrew');
+console.log(typeof lastName);
+
+// do not need let after variable has already been "declared"
+javascriptIsFun = 'YES!';
