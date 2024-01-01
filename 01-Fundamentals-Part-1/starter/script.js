@@ -205,3 +205,22 @@ let markHigherBMI;
 markHigherBMI = markBMI > johnBMI
 console.log(markHigherBMI);
 */
+
+////////////////////////////////////////
+
+// 2.17 STRINGS AND TEMPLATE LITERALS
+
+const firstName = 'Andrew';
+const job = 'System Administrator'
+const birthYear = 1987;
+const now = 2023;
+
+const andrew = "I'm " + firstName + ', a ' + (now - birthYear) + " year old " + job + "."
+// this is a pain to manage in javascript. in ES6 we have a better tool for this (template literals)
+console.log(andrew)
+
+// backticks signify template string
+const andrewNew = `I'm ${firstName}, a ${now-birthYear} year old ${job}.`
+console.log(andrewNew)
+// a lot easier to manage, similar to python/powershell?
+
