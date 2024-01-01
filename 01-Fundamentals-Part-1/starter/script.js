@@ -224,3 +224,22 @@ const andrewNew = `I'm ${firstName}, a ${now-birthYear} year old ${job}.`
 console.log(andrewNew)
 // a lot easier to manage, similar to python/powershell?
 
+// can also use backticks for any string
+console.log(`just a regular string!`)
+
+// template literals is also good for multi-line strings.
+console.log("String with \n\
+continuing here \n\
+another new line.");
+
+//template literal string version of above (backtick and return key):
+console.log(`first line
+second
+third line.`)
+
+//////////////////////////////////////////
+
+// 2.18 MAKING DECISIONS: IF / ELSE STATEMENTS
+
+
+
