@@ -132,3 +132,76 @@ console.log(ageAndrew > ageCallie);
 */
 
 // 2.14 OPERATOR PRECEDENCE
+/*
+const currentYear = 2023
+const ageAndrew = currentYear - 1987;
+const ageCallie = currentYear - 1992;
+
+console.log(currentYear - 1987 > currentYear - 2018);
+
+// math operators are usually before comparison operators, for obvious reasons
+
+console.log(25-10-5);
+
+let x, y; // for now undefined
+x = y = 25 - 10 - 5;
+console.log(x)
+console.log(y)
+console.log(x,y)
+
+let averageAge = ageAndrew + ageCallie / 2 // wrong order of operations
+console.log(ageAndrew, ageCallie, averageAge);
+
+averageAge = (ageAndrew + ageCallie) / 2 // proper way to show
+console.log(averageAge);
+*/
+
+////////////////////////
+/*
+Coding Challenge #1
+
+Mark and John are trying to compare their BMI (Body Mass Index), which is
+calculated using the formula:
+BMI = mass / height ** 2 = mass / (height * height) (mass in kg
+and height in meter).
+
+Your tasks:
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both
+versions)
+3. Create a Boolean variable 'markHigherBMI' containing information about
+whether Mark has a higher BMI than John.
+
+Test data:
+§ Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
+m tall.
+§ Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
+m tall.
+
+let markMass;
+let markHeight;
+let johnMass;
+let johnHeight;
+
+markMass = 78
+markHeight = 1.69
+
+johnMass = 92
+johnHeight = 1.95
+
+// markMass = 95
+// markHeight = 1.88
+
+// johnMass = 85
+// johnHeight = 1.76
+
+const markBMI = markMass / markHeight ** 2
+const johnBMI = johnMass / johnHeight ** 2
+
+console.log(markBMI)
+console.log(johnBMI)
+
+let markHigherBMI;
+markHigherBMI = markBMI > johnBMI
+console.log(markHigherBMI);
+*/
