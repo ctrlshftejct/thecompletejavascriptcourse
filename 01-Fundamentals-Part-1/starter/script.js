@@ -209,7 +209,7 @@ console.log(markHigherBMI);
 ////////////////////////////////////////
 
 // 2.17 STRINGS AND TEMPLATE LITERALS
-
+/*
 const firstName = 'Andrew';
 const job = 'System Administrator'
 const birthYear = 1987;
@@ -236,10 +236,20 @@ another new line.");
 console.log(`first line
 second
 third line.`)
-
+*/
 //////////////////////////////////////////
 
 // 2.18 MAKING DECISIONS: IF / ELSE STATEMENTS
 
+// example -> checking if age is 18
+const age = 15;
 
+const isOldEnough = age >= 16;
 
+// if isOldEnough is true this will be executed
+if(isOldEnough) {
+    console.log(`You can get your license 🚗`);
+} else {
+    const yearsLeft = 16 - age;
+    console.log(`Sorry you're not old enough. You have ${yearsLeft} year(s) until you can drive.`);
+}
