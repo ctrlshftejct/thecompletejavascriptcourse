@@ -240,16 +240,66 @@ third line.`)
 //////////////////////////////////////////
 
 // 2.18 MAKING DECISIONS: IF / ELSE STATEMENTS
-
+/*
 // example -> checking if age is 18
 const age = 15;
 
 const isOldEnough = age >= 16;
 
 // if isOldEnough is true this will be executed
+// if/else control structure
 if(isOldEnough) {
     console.log(`You can get your license 🚗`);
 } else {
     const yearsLeft = 16 - age;
     console.log(`Sorry you're not old enough. You have ${yearsLeft} year(s) until you can drive.`);
 }
+// controlling blocks that should execute and blocks that should not
+
+const birthYear = 1987;
+
+let century;
+if(birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
+
+///////////////////////////////////////////
+
+// CODING CHALLENGE #2
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it.
+Your tasks:
+1. Print a nice output to the console, saying who has the higher BMI.
+The message is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. 
+Example:"Mark's BMI (28.3) is higher than John's (23.9)!"
+
+let markMass;
+let markHeight;
+let johnMass;
+let johnHeight;
+
+markMass = 78
+markHeight = 1.69
+
+johnMass = 92
+johnHeight = 1.95
+
+const markBMI = markMass / markHeight ** 2
+const johnBMI = johnMass / johnHeight ** 2
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`)
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`)
+}
+
+*/
+
+/////////////////////////////////////////
+
+// 2.20 - TYPE CONVERSION AND COERCION
