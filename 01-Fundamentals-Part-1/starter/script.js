@@ -305,7 +305,6 @@ if (markBMI > johnBMI) {
 // 2.20 - TYPE CONVERSION AND TYPE COERCION
 
 // TYPE CONVERSION - when we manually change type
-// TYPE COERCION = when javascript does it for us
 
 // Use Case: Website has input for user's birth year
 const inputYear = '1987';
@@ -313,4 +312,11 @@ console.log(Number(inputYear)); // fixes the problem below.
 //console.log(inputYear + 18); // this doesnt work because according to above it's a string not an integer
 // however, the inputYear variable or value is not actually converted, it's still a string
 console.log(Number(inputYear) + 18); // now it should read properly since you converted the inputYear in equation too
+
+// NaN means not a valid number
+
+// to coerce an integer into a string use the (String()) function
+console.log(String(23));
+
+// TYPE COERCION = when javascript does it for us
 
