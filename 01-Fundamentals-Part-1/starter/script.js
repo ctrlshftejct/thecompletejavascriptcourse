@@ -319,4 +319,21 @@ console.log(Number(inputYear) + 18); // now it should read properly since you co
 console.log(String(23));
 
 // TYPE COERCION = when javascript does it for us
+console.log('I am ' + 23 + ' years old');
+// above is an example of type coercion, since there is a string, then integer, then string
+// ultimately it outputs as a string
+
+// not all operators do type coercion to string
+console.log('23' - '10' - 3); // this gives us 10
+// the minus operator triggered type coercion to go to an integer for everything.
+
+// the same with plus operators changes the type coercion behavior
+console.log('23' + '10' + 3); // this usually only happens with plus sign, since common for strings vs. other operators
+
+// guess the outcome
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+// in first line n = a string of 11
+// in second line the string of 11 will be coerced into integer 11 - 1 equaling 10 in the console
 
