@@ -305,7 +305,7 @@ if (markBMI > johnBMI) {
 // 2.20 - TYPE CONVERSION AND TYPE COERCION
 
 // TYPE CONVERSION - when we manually change type
-
+/*
 // Use Case: Website has input for user's birth year
 const inputYear = '1987';
 console.log(Number(inputYear)); // fixes the problem below.
@@ -337,3 +337,40 @@ console.log(n);
 // in first line n = a string of 11
 // in second line the string of 11 will be coerced into integer 11 - 1 equaling 10 in the console
 
+*/
+
+//////////////////////////////
+
+// 2.21 TRUTHY AND FALSY VALUES
+
+// TRUTHY - a value that is considered true when encountered in a Boolean context
+// FALSY - a value that is considered false when encountered in a Boolean context
+
+// Five Falsy Values
+// 0, '', undefined, null, NaN (and obviously false)
+
+// Truthy Values
+// Any number that is not 0 and any number and any string that is not empty
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Andrew')); // non-empty strings return true
+console.log(Boolean(''));
+console.log(Boolean({})); // objects return true
+
+// when does javascript decide to use type coercion to booleans?
+// during if/else statement (logical statement) and logical operators
+
+const money = 0;
+if(money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+}
+
+let height;
+if(height) {
+  console.log('Yay! Height is defined!');
+} else {
+  console.log('Height is UNDEFINED')
+}
