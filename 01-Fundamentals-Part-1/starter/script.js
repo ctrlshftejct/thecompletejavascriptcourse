@@ -383,3 +383,18 @@ if(height) {
 
 // 2.22 EQUALITY OPERATORS: == vs. ===
 
+const age = 18;
+if(age === 18) console.log('You just became an adult :D')
+// this operator === only returns a true or false value
+
+console.log(age === 18, age === 19); // proof in the console logs
+
+// the double == does type coercion but the triple === does not.
+console.log('18' == 18, '18' === 18);
+
+// so == is called "loose" since it can coerce
+
+// so === is called "strict" since it does not coerce and must be an integer or the same type for it to operate
+
+// AVOID LOOSE OPERATOR as much as possible, will help avoid bugs in code
+
