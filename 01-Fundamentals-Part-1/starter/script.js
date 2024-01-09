@@ -351,7 +351,7 @@ console.log(n);
 
 // Truthy Values
 // Any number that is not 0 and any number and any string that is not empty
-
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('Andrew')); // non-empty strings return true
@@ -361,16 +361,25 @@ console.log(Boolean({})); // objects return true
 // when does javascript decide to use type coercion to booleans?
 // during if/else statement (logical statement) and logical operators
 
-const money = 0;
+const money = 100;
 if(money) {
   console.log("Don't spend it all ;)");
 } else {
   console.log("You should get a job!");
 }
 
-let height;
+let height = 0;
 if(height) {
   console.log('Yay! Height is defined!');
 } else {
   console.log('Height is UNDEFINED')
-}
+} // why is health still undefined? 
+// we must remember 0 is also a falsy value, returning UNDEFINED
+
+// can fix this using logical operators
+*/
+
+////////////////////////////////////////
+
+// 2.22 EQUALITY OPERATORS: == vs. ===
+
