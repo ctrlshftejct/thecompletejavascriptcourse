@@ -305,7 +305,7 @@ if (markBMI > johnBMI) {
 // 2.20 - TYPE CONVERSION AND TYPE COERCION
 
 // TYPE CONVERSION - when we manually change type
-
+/*
 // Use Case: Website has input for user's birth year
 const inputYear = '1987';
 console.log(Number(inputYear)); // fixes the problem below.
@@ -336,4 +336,65 @@ n = n - 1;
 console.log(n);
 // in first line n = a string of 11
 // in second line the string of 11 will be coerced into integer 11 - 1 equaling 10 in the console
+
+*/
+
+//////////////////////////////
+
+// 2.21 TRUTHY AND FALSY VALUES
+
+// TRUTHY - a value that is considered true when encountered in a Boolean context
+// FALSY - a value that is considered false when encountered in a Boolean context
+
+// Five Falsy Values
+// 0, '', undefined, null, NaN (and obviously false)
+
+// Truthy Values
+// Any number that is not 0 and any number and any string that is not empty
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Andrew')); // non-empty strings return true
+console.log(Boolean(''));
+console.log(Boolean({})); // objects return true
+
+// when does javascript decide to use type coercion to booleans?
+// during if/else statement (logical statement) and logical operators
+
+const money = 100;
+if(money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+}
+
+let height = 0;
+if(height) {
+  console.log('Yay! Height is defined!');
+} else {
+  console.log('Height is UNDEFINED')
+} // why is health still undefined? 
+// we must remember 0 is also a falsy value, returning UNDEFINED
+
+// can fix this using logical operators
+*/
+
+////////////////////////////////////////
+
+// 2.22 EQUALITY OPERATORS: == vs. ===
+
+const age = 18;
+if(age === 18) console.log('You just became an adult :D')
+// this operator === only returns a true or false value
+
+console.log(age === 18, age === 19); // proof in the console logs
+
+// the double == does type coercion but the triple === does not.
+console.log('18' == 18, '18' === 18);
+
+// so == is called "loose" since it can coerce
+
+// so === is called "strict" since it does not coerce and must be an integer or the same type for it to operate
+
+// AVOID LOOSE OPERATOR as much as possible, will help avoid bugs in code
 
