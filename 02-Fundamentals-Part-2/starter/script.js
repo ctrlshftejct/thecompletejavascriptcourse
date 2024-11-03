@@ -27,5 +27,38 @@
 // }
 
 // THE SWITCH STATEMENT
+// like another form of if statement
 
-const day = 'monday';
+// const day = 'wednesday';
+
+// switch(day) {
+//     case 'monday': // day == 'monday'
+//         console.log('Plan course structure');
+//         console.log('Go to coding meetup');
+//         break
+//     case 'tuesday': // day == 'tuesday'
+//         console.log('Go to gym');
+//         break
+//     case 'wednesday': // day == 'wednesday'
+//     case 'thursday': // day == 'thursday' (or wednesday since no break)
+//         console.log('Do some work');
+//         break
+//     default: // this is like an else statement
+//         console.log('Not a valid day!');
+// }
+
+// // CHALLENGE! 
+
+// if(day === 'monday') {
+//     console.log('Plan couse structure');
+//     console.log('Go to coding meetup');
+// } else if (day === 'tuesday') {
+//     console.log('Go to gym');
+// } else if (day === 'wednesday' || day === 'thursday') {
+//     console.log('Do some work');
+// } else {
+//     console.log('Not a valid day!')
+// }
+
+// STATEMENTS AND EXPRESSIONS
+
