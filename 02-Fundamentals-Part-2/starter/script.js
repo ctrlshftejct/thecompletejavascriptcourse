@@ -62,3 +62,14 @@
 
 // STATEMENTS AND EXPRESSIONS
 
+// simple expressions (produce a value)
+3 * 4
+1991
+true && false && !false
+
+// statements (do not produce a value)
+// they perform actions, the action may be an expression though
+if (23>10) {
+    const str = '23 is bigger';
+}
+
